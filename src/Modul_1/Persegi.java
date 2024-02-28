@@ -10,6 +10,7 @@ public class Persegi {
 
     public double luas(){
             luas = panj*lebar;
-            return luas;}
+            return luas;
+    }
 }
 

@@ -1,13 +1,13 @@
 package Modul_1;
 
-public class BujurSangkar {
+public class BujurSangkar {// Membuat kelas BujurSangkar
     int sisi;
     double luas;
 
-    BujurSangkar(){}
+    BujurSangkar(){}// Konstruktor BujurSangkar
 
-    public double luas(){
+    public double luas(){// Metode yang akan dieksekusi oleh main untuk menghitung luas bujur sangkar
         luas = sisi*sisi;
-        return luas;
+        return luas;// Mengembalikan nilai luas ke main
     }
 }
