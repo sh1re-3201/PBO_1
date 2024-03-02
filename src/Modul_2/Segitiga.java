@@ -11,5 +11,6 @@ public class Segitiga {
     public double hitungLuas(){
         double s = hitungKeliling();
         return Math.sqrt(s * (s-hitungSisi(x1,y1,x2,y2)) * (s-hitungSisi(x2,y2,x3,y3)) * (s-hitungSisi(x3,y3,x1,y1)));
+
     }
 }

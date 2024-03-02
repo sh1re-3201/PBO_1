@@ -1,5 +1,5 @@
 package Modul_1;
-public class Buku {// kelas Buku untuk menjadi wadah perintah yang akan di eksekusi oleh kelas 'BukuMain'
+public class Buku extends BukuMain {// kelas Buku untuk menjadi wadah perintah yang akan di eksekusi oleh kelas 'BukuMain'
     // Mendeklerasikan atribut dari kelas buku
     private String judul;
     private String pengarang;

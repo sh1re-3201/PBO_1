@@ -1,6 +1,6 @@
 package Modul_1;
 
-public class Lingkaran {
+public class Lingkaran extends LingkaranMain {
     double r;
     double luas;
     final double PHI=3.14;// Menginisialisasi attribut PHI bertipe double yang final(tidak bisa diubah)

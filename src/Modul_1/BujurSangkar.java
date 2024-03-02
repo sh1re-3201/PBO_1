@@ -1,6 +1,6 @@
 package Modul_1;
 
-public class BujurSangkar {// Membuat kelas BujurSangkar
+public class BujurSangkar extends BujurSangkarMain {// Membuat kelas BujurSangkar
     int sisi;
     double luas;
 

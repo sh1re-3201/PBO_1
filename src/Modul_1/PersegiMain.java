@@ -2,7 +2,7 @@ package Modul_1;
 
 import javax.swing.JOptionPane;// Mengimpor JOptionPane dari pustaka javax.swing
 
-public class PersegiMain {
+public class PersegiMain extends Persegi {
     public static void main(String[] args) {
         Persegi objPersegi = new Persegi();// Membuat objek baru bernama 'objPersegi' pada kelas Persegi
 

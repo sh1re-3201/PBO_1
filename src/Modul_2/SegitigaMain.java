@@ -24,7 +24,5 @@ public class SegitigaMain {
 
         System.out.println("Luas segitiga dengan titik (0,0) (5,4) dan (8,2) adalah :\n"+ seg2.hitungLuas());
 
-
-
     }
 }
