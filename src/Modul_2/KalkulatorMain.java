@@ -30,11 +30,10 @@ public class KalkulatorMain {
         // Menghitung hasil perkalian
         System.out.println("Hasil perkalian: " + Calc.kali());
 
-        try {
-            // Menghitung hasil pembagian
-            System.out.println("Hasil pembagian: " + Calc.bagi());
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
+        try {// Memulai operasi try catch
+            System.out.println("Hasil pembagian: " + Calc.bagi());// Jika tidak ada exception yang dilempar maka akan mencetak hasil dari method bagi class Kalkulator
+        } catch (IllegalArgumentException e) {// Jika didapati ada exception(IllegalArgumentException) yang dilempar
+            System.out.println(e.getMessage());// Akan mencetak pesan yang dilempar bersama dengan exception
         }
     }
 }

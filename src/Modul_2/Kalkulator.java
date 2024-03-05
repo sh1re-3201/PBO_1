@@ -10,7 +10,7 @@ public class Kalkulator {
         this.bilangan2 = bilangan2;
     }
 
-    // Getter and Setter methods
+    // Metode getter setter untuk kedua attribut
     public double getBilangan1() {
         return bilangan1;
     }
@@ -27,25 +27,21 @@ public class Kalkulator {
         this.bilangan2 = bilangan2;
     }
 
-    // Method to perform addition
     public double tambah() {
         return bilangan1 + bilangan2;
     }
 
-    // Method to perform subtraction
     public double kurang() {
         return bilangan1 - bilangan2;
     }
 
-    // Method to perform multiplication
     public double kali() {
         return bilangan1 * bilangan2;
     }
 
-    // Method to perform division
     public double bagi() {
-        if (bilangan2 == 0) {
-            throw new IllegalArgumentException("Pembagian dengan nol tidak diizinkan");
+        if (bilangan2 == 0) {// Statement if jika bilangan2 berisi nilai Int(0)
+            throw new IllegalArgumentException("Pembagian dengan nol tidak diizinkan");// Melempar exception agar pembagian dengan 0 tidak terjadi
         }
         return bilangan1 / bilangan2;
     }

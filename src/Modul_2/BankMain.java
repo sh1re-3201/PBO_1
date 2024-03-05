@@ -3,7 +3,7 @@ package Modul_2;
 public class BankMain {
     public static void main(String[] args) {
         RekeningBank rekeningBudi;
-        rekeningBudi = new RekeningBank("12345");
+        rekeningBudi = new RekeningBank("12345"); // Inisialisasi objek rekeningBudi
         System.out.println("Rekening Budi = " + rekeningBudi.cekSaldo());
 
         System.out.println("Menabung Rp 50.000");
