@@ -2,15 +2,15 @@ package Modul_2;
 
 public class PegawaiGajiMain {
     public static void main(String[] args) {
-//        Membuat objek pegawai baru dari class PegawaiData
-        PegawaiData pegawai1 = new PegawaiData();
+//        Membuat objek pegawai baru dari class Pegawai
+        Pegawai pegawai1 = new Pegawai();
         pegawai1.setNPP("001");
         pegawai1.setNama("Oris");
         pegawai1.setGolongan(3);
         pegawai1.setMenikah(true);
         pegawai1.setJumlahAnak(4);
 
-        PegawaiData pegawai2 = new PegawaiData();
+        Pegawai pegawai2 = new Pegawai();
         pegawai2.setNPP("012");
         pegawai2.setNama("Hedwig");
         pegawai2.setGolongan(2);

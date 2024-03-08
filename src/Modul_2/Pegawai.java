@@ -1,6 +1,6 @@
 package Modul_2;
 
-public class PegawaiData {
+public class Pegawai {
     private String NPP;
     private String nama;
     private int golongan;
@@ -8,7 +8,7 @@ public class PegawaiData {
     private int jumlahAnak;
 
     // Constructor
-    public PegawaiData() {}
+    public Pegawai() {}
 
     public String getNPP() {
         return NPP;
