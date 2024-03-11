@@ -16,7 +16,6 @@ public class PegawaiGajiMain {
         pegawai2.setGolongan(2);
         pegawai2.setMenikah(false);
         pegawai2.setJumlahAnak(0);
-
 //        Membuat objek calculator baru dari class CalcGaji
         CalcGaji calculator = new CalcGaji();
 

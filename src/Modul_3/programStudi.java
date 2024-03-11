@@ -7,7 +7,7 @@ public class programStudi {
     private Pegawai ketuaProdi;
 
     // Constructorl
-    public programStudi(){};
+    public programStudi(){}
 
     public int getKodeProdi() {
         return kodeProdi;
@@ -23,14 +23,6 @@ public class programStudi {
 
     public void setNamaProdi(String namaProdi) {
         this.namaProdi = namaProdi;
-    }
-
-    public Pegawai getKetuaProdi() {
-        return ketuaProdi;
-    }
-
-    public void setKetuaProdi(Pegawai ketuaProdi) {
-        this.ketuaProdi = ketuaProdi;
     }
 
 }

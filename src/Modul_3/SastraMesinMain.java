@@ -12,7 +12,7 @@ public class SastraMesinMain {
         prodi.setKodeProdi(60615);
         prodi.setNamaProdi("Sastra Mesin");
 
-        System.out.println("Program Studi: " + prodi.getNamaProdi());
+        System.out.println("Program Studi: " + prodi.getNamaProdi() + ", Kode Prodi: (" + prodi.getKodeProdi() + ")");
         System.out.println("Diketuai Oleh: " + ketua.getNama() + " (" + ketua.getNPP() + ")");
     }
 }
