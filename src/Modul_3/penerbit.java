@@ -5,8 +5,7 @@ public class penerbit {
     private String tahunBerdiri;
     private String alamat;
 
-    public penerbit(String namaPenerbit){
-        this.namaPenerbit = namaPenerbit;
+    public penerbit(){
     }
 
     public String getNamaPenerbit() {
