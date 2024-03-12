@@ -73,7 +73,7 @@ public class bukuMain {
 
     void output() {
         Scanner aria = new Scanner(System.in);
-        byte pilihan = 0;
+        byte pilihan;
 
         while (true) {
             try {
