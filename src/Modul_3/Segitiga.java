@@ -4,7 +4,10 @@ public class Segitiga {
     private Titik titikA, titikB, titikC;
     private double sisiA, sisiB, sisiC;
 
-    public Segitiga(Titik satu, Titik dua, Titik tiga) {//constructor segitiga
+    /* Konstruktor segitiga diubah dari keadaan awal pada soal yaitu
+    public Segitiga (Titik satu, Titik dua, Titik tiga)
+    sebelum diubah program mengalami error nullPointerException*/
+    public Segitiga(Titik titikA, Titik titikB, Titik titikC) {//constructor segitiga
         this.titikA = titikA;
         this.titikB = titikB;
         this.titikC = titikC;

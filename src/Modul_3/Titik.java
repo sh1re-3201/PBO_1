@@ -20,7 +20,6 @@ public class Titik {
         return x;
     }
 
-
     public int getY() {
         return y;
     }
