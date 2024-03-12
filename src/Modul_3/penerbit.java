@@ -2,11 +2,10 @@ package Modul_3;
 
 public class penerbit {
     private String namaPenerbit;
-    private String tahunBerdiri;
+    private String tanggalBerdiri;
     private String alamat;
 
-    public penerbit(){
-    }
+    public penerbit(){}
 
     public String getNamaPenerbit() {
         return namaPenerbit;
@@ -16,12 +15,12 @@ public class penerbit {
         this.namaPenerbit = namaPenerbit;
     }
 
-    public String getTahunBerdiri() {
-        return tahunBerdiri;
+    public String getTanggalBerdiri() {
+        return tanggalBerdiri;
     }
 
-    public void setTahunBerdiri(String tahunBerdiri) {
-        this.tahunBerdiri = tahunBerdiri;
+    public void setTanggalBerdiri(String tanggalBerdiri) {
+        this.tanggalBerdiri = tanggalBerdiri;
     }
 
     public String getAlamat() {
