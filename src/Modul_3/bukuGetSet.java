@@ -4,10 +4,11 @@ public class bukuGetSet {
     private int kodeBuku;
     private String judulBuku;
     private String pengarang;
-    private penerbit getNamaPenerbit;
+    private penerbit Penerbit;
+
 
     public bukuGetSet(penerbit Penerbit) {// Constructor bukuGetSet
-
+        this.Penerbit = Penerbit;
     }
 
     public void setKodeBuku(int kodeBuku) {
@@ -18,8 +19,8 @@ public class bukuGetSet {
         this.judulBuku = judulBuku;
     }
 
-    public void setPenerbit(penerbit getNamaPenerbit) {
-        this.getNamaPenerbit = getNamaPenerbit;
+    public void setPenerbit(penerbit Penerbit) {
+        this.Penerbit = Penerbit;
     }
 
     public void setPengarang(String pengarang) {
@@ -35,7 +36,7 @@ public class bukuGetSet {
     }
 
     public penerbit getPenerbit() {
-        return getNamaPenerbit;
+        return Penerbit;
     }
 
     public String getPengarang() {
