@@ -1,11 +1,11 @@
 package Modul_3;
 
-public class penerbit {
+public class Penerbit {
     private String namaPenerbit;
     private String tanggalBerdiri;
     private String alamat;
 
-    public penerbit(){}
+    public Penerbit(){}
 
     public String getNamaPenerbit() {
         return namaPenerbit;
@@ -14,7 +14,6 @@ public class penerbit {
     public void setNamaPenerbit(String namaPenerbit) {
         this.namaPenerbit = namaPenerbit;
     }
-
     public String getTanggalBerdiri() {
         return tanggalBerdiri;
     }

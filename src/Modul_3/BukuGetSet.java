@@ -1,14 +1,14 @@
 package Modul_3;
 
-public class bukuGetSet {
+public class BukuGetSet {
     private String kodeBuku;
     private String judulBuku;
     private String pengarang;
-    private penerbit Penerbit;
+    private Penerbit Penerbit;
     private int tahunTerbit;
 
 
-    public bukuGetSet(penerbit Penerbit) {// Constructor bukuGetSet
+    public BukuGetSet(Penerbit Penerbit) {// Constructor BukuGetSet
         this.Penerbit = Penerbit;
     }
 
@@ -20,7 +20,7 @@ public class bukuGetSet {
         this.judulBuku = judulBuku;
     }
 
-    public void setPenerbit(penerbit Penerbit) {
+    public void setPenerbit(Modul_3.Penerbit Penerbit) {
         this.Penerbit = Penerbit;
     }
 
@@ -39,7 +39,7 @@ public class bukuGetSet {
         return judulBuku;
     }
 
-    public penerbit getPenerbit() {
+    public Penerbit getPenerbit() {
         return Penerbit;
     }
 

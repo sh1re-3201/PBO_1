@@ -3,30 +3,30 @@ package Modul_3;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class bukuMain {
+public class BukuMain {
     // Deklarasi objek sebagai variabel kelas
-    private static bukuGetSet buku1;
-    private static bukuGetSet buku2;
-    private static bukuGetSet buku3;
-    private static bukuGetSet buku4;
+    private static BukuGetSet buku1;
+    private static BukuGetSet buku2;
+    private static BukuGetSet buku3;
+    private static BukuGetSet buku4;
 
-    private static penerbit terbit1;
-    private static penerbit terbit2;
-    private static penerbit terbit3;
-    private static penerbit terbit4;
+    private static Penerbit terbit1;
+    private static Penerbit terbit2;
+    private static Penerbit terbit3;
+    private static Penerbit terbit4;
 
     public static void main(String[] args) {
         // Inisialisasi objek terbit
-        terbit1 = new penerbit();
-        terbit2 = new penerbit();
-        terbit3 = new penerbit();
-        terbit4 = new penerbit();
+        terbit1 = new Penerbit();
+        terbit2 = new Penerbit();
+        terbit3 = new Penerbit();
+        terbit4 = new Penerbit();
 
         // Inisialisasi objek buku
-        buku1 = new bukuGetSet(terbit1);
-        buku2 = new bukuGetSet(terbit2);
-        buku3 = new bukuGetSet(terbit3);
-        buku4 = new bukuGetSet(terbit4);
+        buku1 = new BukuGetSet(terbit1);
+        buku2 = new BukuGetSet(terbit2);
+        buku3 = new BukuGetSet(terbit3);
+        buku4 = new BukuGetSet(terbit4);
 
         // Set data buku
         buku1.setJudulBuku("Nusa utara dari Lintasan Niaga Ke Daerah Perbatasan");
@@ -49,7 +49,7 @@ public class bukuMain {
         buku4.setPengarang("Yuval Noah Harari");
         buku4.setTahunTerbit(2021);
 
-        // Set data penerbit
+        // Set data Penerbit
         terbit1.setNamaPenerbit("Penerbit Ombak");
         terbit1.setTanggalBerdiri("8 Februari 2002");
         terbit1.setAlamat("Jl. Progo B-15,Yogyakarta 55599");
@@ -67,7 +67,7 @@ public class bukuMain {
         terbit4.setAlamat("Gedung Kompas Gramedia Blok 1 lt. 5, Jl. Palmerah Barat No.29-37 Jakarta 10270 Indonesia");
 
         // Panggil method output()
-        bukuMain outputBuku = new bukuMain();
+        BukuMain outputBuku = new BukuMain();
         outputBuku.output();
     }
 
@@ -87,6 +87,11 @@ public class bukuMain {
                         System.out.printf("%-30s %-70s\n", "Nama Pengarang:", buku1.getPengarang());
                         System.out.printf("%-30s %-70s\n", "Nama Penerbit:", buku1.getPenerbit().getNamaPenerbit());
                         System.out.printf("%-30s %-70s\n", "Kode Buku:", buku1.getKodeBuku());
+                        if (buku1.getTahunTerbit() > 2019){
+                            System.out.printf("%-30s %-70s\n","Keterangan :", "BUKU LAMA");
+                        } else {
+                            System.out.printf("%-30s %-70s\n","Keterangan :","BUKU BARU");
+                        }
                         System.out.println();
                         break;
 
@@ -96,6 +101,11 @@ public class bukuMain {
                         System.out.printf("%-30s %-70s\n", "Nama Pengarang:", buku2.getPengarang());
                         System.out.printf("%-30s %-70s\n", "Nama Penerbit:", buku2.getPenerbit().getNamaPenerbit());
                         System.out.printf("%-30s %-70s\n", "Kode Buku:", buku2.getKodeBuku());
+                        if (buku2.getTahunTerbit() > 2019){
+                            System.out.printf("%-30s %-70s\n","Keterangan :", "BUKU LAMA");
+                        } else {
+                            System.out.printf("%-30s %-70s\n","Keterangan :","BUKU BARU");
+                        }
                         System.out.println();
                         break;
 
@@ -105,6 +115,11 @@ public class bukuMain {
                         System.out.printf("%-30s %-70s\n", "Nama Pengarang:", buku3.getPengarang());
                         System.out.printf("%-30s %-70s\n", "Nama Penerbit:", buku3.getPenerbit().getNamaPenerbit());
                         System.out.printf("%-30s %-70s\n", "Kode Buku:", buku3.getKodeBuku());
+                        if (buku3.getTahunTerbit() > 2019){
+                            System.out.printf("%-30s %-70s\n","Keterangan :", "BUKU LAMA");
+                        } else {
+                            System.out.printf("%-30s %-70s\n","Keterangan :","BUKU BARU");
+                        }
                         System.out.println();
                         break;
 
@@ -114,6 +129,11 @@ public class bukuMain {
                         System.out.printf("%-30s %-70s\n", "Nama Pengarang:", buku4.getPengarang());
                         System.out.printf("%-30s %-70s\n", "Nama Penerbit:", buku4.getPenerbit().getNamaPenerbit());
                         System.out.printf("%-30s %-70s\n", "Kode Buku:", buku4.getKodeBuku());
+                        if (buku4.getTahunTerbit() > 2019){
+                            System.out.printf("%-30s %-70s\n","Keterangan :", "BUKU LAMA");
+                        } else {
+                            System.out.printf("%-30s %-70s\n","Keterangan :","BUKU BARU");
+                        }
                         System.out.println();
                         break;
 

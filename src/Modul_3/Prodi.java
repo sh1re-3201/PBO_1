@@ -1,7 +1,7 @@
 package Modul_3;
 
-import Modul_2.Pegawai;
-public class SastraMesinMain {
+import Modul_2.Pegawai;// mengimpor class Pegawai dari package Modul_2
+public class Prodi {
     public static void main(String[] args) {
         Pegawai ketua = new Pegawai();
         programStudi prodi = new programStudi();
