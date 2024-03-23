@@ -18,6 +18,7 @@ public class KelolaPerusahaan {
                     Nama Perusahaan Tidak Boleh Kosong
                     Silakan coba lagi""");
         }
+// Set nama Perusahaan
         String alamatPerusahaan = JOptionPane.showInputDialog(null, "Masukkan alamat perusahaan");
         if (alamatPerusahaan == null) {
             return;
@@ -27,6 +28,7 @@ public class KelolaPerusahaan {
                     Alamat Perusahaan Tidak Boleh Kosong
                     Silakan coba lagi""");
         }
+// Set alamat Perusahaan
         String pemilikPerusahaan = JOptionPane.showInputDialog(null, "Masukkan nama pemilik perusahaan");
         if (pemilikPerusahaan == null) {
             return;
@@ -36,6 +38,7 @@ public class KelolaPerusahaan {
                     Nama Pemilik Perusahaan Tidak Boleh Kosong
                     Silakan coba lagi""");
         }
+// Set pemilik perusahaan
 
         boolean npwpBool = false;
         while (!npwpBool) {
@@ -55,6 +58,7 @@ public class KelolaPerusahaan {
                 JOptionPane.showMessageDialog(null, "Masukkan data berupa angka. Silakan coba lagi");
             }
         }
+// set NPWP
         while (!keluar) {
             String input = JOptionPane.showInputDialog(null, "Masukkan jumlah pegawai yang ingin anda masukkan datanya");
             if (input == null) {// If statement ini berfungsi untuk keluar dari program jika user mengklik tombol X(silang) pada jendela
@@ -76,7 +80,7 @@ public class KelolaPerusahaan {
             }
         }
         Pegawai[] pegawaiData = new Pegawai[count];
-        for (int i = 0; i < pegawaiData.length;) {
+        for (int i = 0; i < pegawaiData.length;) { // Blok kode untuk set data pegawai
 
         }
     }
