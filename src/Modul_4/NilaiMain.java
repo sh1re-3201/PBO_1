@@ -106,9 +106,32 @@ public class NilaiMain {
             }
         }
 
+        // mencari rata-rata uts1
+        double nilaiUts1RataRata = 0;
+        for (int i = 0; i < laporan.length; i++) {
+            nilaiUts1RataRata += laporan[i].getUts1();
+        }
+        nilaiUts1RataRata /= laporan.length;
+
+        // mencari rata-rata uts2
+        double nilaiUts2RataRata = 0;
+        for (int i = 0; i < laporan.length; i++) {
+            nilaiUts2RataRata += laporan[i].getUts2();
+        }
+        nilaiUts2RataRata /= laporan.length;
+
+        // mencari rata-rata uas
+        double nilaiUasRataRata = 0;
+        for (int i = 0; i < laporan.length; i++) {
+            nilaiUasRataRata += laporan[i].getUas();
+        }
+        nilaiUasRataRata /= laporan.length;
+
+        // Header dari tabel
         String[] columnNames = {"Nama", "NIM", "Tanggal Lahir", "UTS1", "UTS2", "UAS", "Predikat"};
         Object[][] data = new Object[count][7];
 
+        // Berfungsi untuk memanggil data dari array mhs untuk ditampilkan
         for (int i = 0; i < count; i++) {
             Mahasiswa mhs = laporan[i];
             data[i][0] = mhs.getNama();
@@ -129,7 +152,20 @@ public class NilaiMain {
         frame.setLayout(new BorderLayout());
 
         frame.add(scrollPane, BorderLayout.CENTER);
+
         // Menambahkan label untuk nilai tertinggi
+        JPanel panpan = new JPanel();
+        panpan.setLayout(new BoxLayout(panpan, BoxLayout.Y_AXIS));
+        JLabel labelRataRataUts1 = new JLabel("Rata-rata UTS1 : " + nilaiUts1RataRata);
+        JLabel labelRataRataUts2 = new JLabel("Rata-rata UTS2 : " + nilaiUts2RataRata);
+        JLabel labelRataRataUas = new JLabel("Rata-rata UAS : " + nilaiUasRataRata);
+
+        panpan.add(labelRataRataUts1);
+        panpan.add(labelRataRataUts2);
+        panpan.add(labelRataRataUas);
+
+        frame.add(panpan, BorderLayout.EAST);
+
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         JLabel labelNilaiTertinggi = new JLabel("Nilai tertinggi:");
