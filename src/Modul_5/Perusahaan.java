@@ -6,7 +6,7 @@ public class Perusahaan {
     private String namaPerusahaan;
     private String alamatPerusahaan;
     private String pemilikPerusahaan;
-    private String NPWP;
+    private int NPWP;
     private Pegawai[] daftarPegawai;
 
     // Constructor
@@ -36,11 +36,11 @@ public class Perusahaan {
         this.pemilikPerusahaan = pemilikPerusahaan;
     }
 
-    public String getNPWP() {
+    public int getNPWP() {
         return NPWP;
     }
 
-    public void setNPWP(String NPWP) {
+    public void setNPWP(int NPWP) {
         this.NPWP = NPWP;
     }
 

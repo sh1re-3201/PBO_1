@@ -6,6 +6,7 @@ import javax.swing.*;
 
 public class KelolaPerusahaan {
     public static void main(String[] args) {
+        Perusahaan manusia = new Perusahaan();
         boolean keluar = false;
         int count = 0;
 
@@ -14,11 +15,13 @@ public class KelolaPerusahaan {
             return;
         }
         if (namaPerusahaan.isEmpty()) {
-            JOptionPane.showInputDialog(null, """
+            JOptionPane.showMessageDialog(null, """
                     Nama Perusahaan Tidak Boleh Kosong
                     Silakan coba lagi""");
-        }
-// Set nama Perusahaan
+        } else
+            manusia.setNamaPerusahaan(namaPerusahaan);
+
+
         String alamatPerusahaan = JOptionPane.showInputDialog(null, "Masukkan alamat perusahaan");
         if (alamatPerusahaan == null) {
             return;
@@ -27,7 +30,9 @@ public class KelolaPerusahaan {
             JOptionPane.showInputDialog(null, """
                     Alamat Perusahaan Tidak Boleh Kosong
                     Silakan coba lagi""");
-        }
+        } else
+            manusia.setAlamatPerusahaan(alamatPerusahaan);
+
 // Set alamat Perusahaan
         String pemilikPerusahaan = JOptionPane.showInputDialog(null, "Masukkan nama pemilik perusahaan");
         if (pemilikPerusahaan == null) {
@@ -37,8 +42,8 @@ public class KelolaPerusahaan {
             JOptionPane.showInputDialog(null, """
                     Nama Pemilik Perusahaan Tidak Boleh Kosong
                     Silakan coba lagi""");
-        }
-// Set pemilik perusahaan
+        } else
+            manusia.setPemilikPerusahaan(pemilikPerusahaan);
 
         boolean npwpBool = false;
         while (!npwpBool) {
@@ -52,13 +57,14 @@ public class KelolaPerusahaan {
                     JOptionPane.showMessageDialog(null, "Data yang dimasukkan tidak boleh kosong");
                 } else {
                     int npwpFinal = Integer.parseInt(npwpInput);
+                    manusia.setNPWP(npwpFinal);
                     npwpBool = true;
                 }
             } catch (NumberFormatException e) {
                 JOptionPane.showMessageDialog(null, "Masukkan data berupa angka. Silakan coba lagi");
             }
         }
-// set NPWP
+        System.out.println(manusia.getNPWP());
         while (!keluar) {
             String input = JOptionPane.showInputDialog(null, "Masukkan jumlah pegawai yang ingin anda masukkan datanya");
             if (input == null) {// If statement ini berfungsi untuk keluar dari program jika user mengklik tombol X(silang) pada jendela
@@ -79,8 +85,15 @@ public class KelolaPerusahaan {
                 JOptionPane.showMessageDialog(null, "Masukkan data berupa angka. Silakan coba lagi.");
             }
         }
-        Pegawai[] pegawaiData = new Pegawai[count];
-        for (int i = 0; i < pegawaiData.length;) { // Blok kode untuk set data pegawai
+        Pegawai[] daftarPegawai = new Pegawai[count];
+        for (int i = 0; i < daftarPegawai.length;) { // Blok kode untuk set data pegawai
+            String namaPegawai = JOptionPane.showInputDialog(null, "Masukkan nama pegawai ke " + (i+1));
+            if (namaPegawai == null) return;
+
+            String nppPerusahaan = JOptionPane.showInputDialog(null, "Masukkan NPP pegawai ke " + (i + 1));
+            if (nppPerusahaan == null) return;
+
+
 
         }
     }
