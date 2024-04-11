@@ -52,4 +52,38 @@ public class Perusahaan {
         this.daftarPegawai = daftarPegawai;
     }
 
+    public void displayAllPegawai() {
+        for (Pegawai pegawai : daftarPegawai) {
+            System.out.println(formatPegawai(pegawai));
+        }
+    }
+
+    public void displayMinMaxGaji() {
+        if (daftarPegawai.length == 0) {
+            System.out.println("Tidak ada pegawai dalam perusahaan ini.");
+            return;
+        }
+
+        Pegawai minGajiPegawai = daftarPegawai[0];
+        Pegawai maxGajiPegawai = daftarPegawai[0];
+        double totalGaji = 0;
+
+        for (Pegawai pegawai : daftarPegawai) {
+            if (pegawai.getGolongan() < minGajiPegawai.getGolongan()) {
+                minGajiPegawai = pegawai;
+            }
+            if (pegawai.getGolongan() > maxGajiPegawai.getGolongan()) {
+                maxGajiPegawai = pegawai;
+            }
+            totalGaji += pegawai.getGolongan();
+        }
+
+        System.out.println("Pegawai dengan gaji terkecil: " + formatPegawai(minGajiPegawai));
+        System.out.println("Pegawai dengan gaji terbesar: " + formatPegawai(maxGajiPegawai));
+//        System.out.println("Rata-rata gaji: " + totalGaji / daftarPegawai.length);
+    }
+
+    private String formatPegawai(Pegawai pegawai) {
+        return "NPP: " + pegawai.getNPP() + ", Nama: " + pegawai.getNama() + ", Golongan: " + pegawai.getGolongan();
+    }
 }

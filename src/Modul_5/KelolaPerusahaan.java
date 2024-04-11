@@ -86,15 +86,30 @@ public class KelolaPerusahaan {
             }
         }
         Pegawai[] daftarPegawai = new Pegawai[count];
-        for (int i = 0; i < daftarPegawai.length;) { // Blok kode untuk set data pegawai
+        for (int i = 0; i < daftarPegawai.length; i++) { // Blok kode untuk set data pegawai
+            daftarPegawai[i] = new Pegawai();
+
             String namaPegawai = JOptionPane.showInputDialog(null, "Masukkan nama pegawai ke " + (i+1));
             if (namaPegawai == null) return;
+            daftarPegawai[i].setNama(namaPegawai);
 
-            String nppPerusahaan = JOptionPane.showInputDialog(null, "Masukkan NPP pegawai ke " + (i + 1));
-            if (nppPerusahaan == null) return;
+            String nppPegawai = JOptionPane.showInputDialog(null, "Masukkan NPP pegawai ke " + (i + 1));
+            if (nppPegawai == null) return;
+            daftarPegawai[i].setNPP(nppPegawai);
 
-
+            String golonganPegawai = JOptionPane.showInputDialog(null, "Masukkan Golongan pegawai ke " + (i + 1));
+            if (golonganPegawai == null) return;
+            daftarPegawai[i].setGolongan(Integer.parseInt(golonganPegawai));
 
         }
+        manusia.setDaftarPegawai(daftarPegawai);
+        manusia.displayAllPegawai();
+        manusia.displayMinMaxGaji();
+        double gaji = 0;
+        for (int i = 0; i < daftarPegawai.length; i++) {
+            gaji += daftarPegawai[i].hitungGajiPokok();
+        }
+        double rataRata = gaji / count;
+        System.out.println("Rata-rata gaji pokok = " + (int) rataRata);
     }
 }
