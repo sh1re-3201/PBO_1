@@ -63,18 +63,24 @@ public class Mahasiswa {
         return nilaiAkhirHitung;
     }
 
+    public double hitungNilaiFinal() {
+        return ((30.0/100 * uts1) + (30.0/100 * uts2) + (40.0/100 * uas));
+    }
+
     public char predikat() {
-        nilaiAKhir();
-        if (this.nilaiAkhirHitung >= 80){
+        double nilaiAkhirFinal = hitungNilaiFinal();
+
+        if (nilaiAkhirFinal >= 80){
             return 'A';
-        } else if (this.nilaiAkhirHitung >= 70) {
+        } else if (nilaiAkhirFinal >= 70) {
             return 'B';
-        } else if (this.nilaiAkhirHitung >= 56) {
+        } else if (nilaiAkhirFinal >= 56) {
             return 'C';
-        } else if (this.nilaiAkhirHitung >= 45) {
+        } else if (nilaiAkhirFinal >= 45) {
             return 'D';
         } else {
             return 'E';
         }
     }
+
 }

@@ -33,7 +33,7 @@ public class KelolaPerusahaan {
         } else
             manusia.setAlamatPerusahaan(alamatPerusahaan);
 
-// Set alamat Perusahaan
+// Set alamat Karyawan
         String pemilikPerusahaan = JOptionPane.showInputDialog(null, "Masukkan nama pemilik perusahaan");
         if (pemilikPerusahaan == null) {
             return;

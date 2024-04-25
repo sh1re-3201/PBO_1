@@ -10,6 +10,12 @@ public class Pegawai {
     // Constructor
     public Pegawai() {}
 
+    public Pegawai(String NPP, String nama, int jumlahAnak) {
+        this.NPP = NPP;
+        this.nama = nama;
+        this.jumlahAnak = jumlahAnak;
+    }
+
     public String getNPP() {
         return NPP;
     }
