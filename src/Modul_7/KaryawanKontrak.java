@@ -1,4 +1,4 @@
-package Latihan_22_April;
+package Modul_7;
 
 public class KaryawanKontrak extends Karyawan {
     private int upahHarian;

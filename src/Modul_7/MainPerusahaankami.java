@@ -1,9 +1,14 @@
-package Latihan_22_April;
+package Modul_7;
 
-
+import java.util.Scanner;
 
 public class MainPerusahaankami {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan Jumlah Hari Masuk Karyawan Kontrak : ");
+        int hariMasuk = input.nextInt();
+
         KaryawanTetap tetap = new KaryawanTetap(1224121, "Aladin", 2, 5000000);
         int totalGajiTetap = tetap.hitungGajiTotal();
 
@@ -19,7 +24,7 @@ public class MainPerusahaankami {
         System.out.println("===========================================");
 
 
-        KaryawanKontrak kontrak = new KaryawanKontrak(12531131, "Asephus Painganensis", 1, 150000, 20);
+        KaryawanKontrak kontrak = new KaryawanKontrak(12531131, "Asephus Painganensis", 1, 150000, hariMasuk);
         int totalUpahKontrak = kontrak.hitungUpahTotal();
         System.out.println("Nama Karyawan Kontrak: " + kontrak.getNamaPegawai());
         System.out.println("NPP Karyawan Kontrak: " + kontrak.getNpp());
