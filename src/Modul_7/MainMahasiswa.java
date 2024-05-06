@@ -2,7 +2,7 @@ package Modul_7;
 
 public class MainMahasiswa {
     public static void main(String[] args) {
-        MahasiswaS1 mhsS1 = new MahasiswaS1("Gresia Plena");
+        MahasiswaS1 mhsS1 = new MahasiswaS1("Oros");
         mhsS1.setNim("123456");
         mhsS1.setUts1(85.5);
         mhsS1.setUts2(80.0);
