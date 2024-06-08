@@ -7,10 +7,11 @@ public class Lingkaran extends BangunDatar{
         this.radius = radius;
     }
 
+    @Override
     protected double hitungLuas() {
         return Math.PI * radius * radius;
     }
-
+    @Override
     protected double hitungKeliling() {
         return 2 * Math.PI * radius;
     }

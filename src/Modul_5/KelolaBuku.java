@@ -7,19 +7,15 @@ public class KelolaBuku {
         int jumlahBuku = Integer.parseInt(JOptionPane.showInputDialog("Masukkan jumlah buku baru yang akan disimpan: "));
         Buku[] daftarBuku = new Buku[jumlahBuku];
 
-        // b. For each book object:
         for (int i = 0; i < jumlahBuku; i++) {
-            //    - Create a book object and enter the book code, title, author, year of publication.
             Buku buku = new Buku();
             buku.setKodeBuku(JOptionPane.showInputDialog("Masukkan kode buku: "));
             buku.setJudul(JOptionPane.showInputDialog("Masukkan judul buku: "));
             buku.setTahunTerbit(Integer.parseInt(JOptionPane.showInputDialog("Masukkan tahun terbit buku: ")));
 
-            //    - Ask for input in the form of the number of authors.
             int jumlahPengarang = Integer.parseInt(JOptionPane.showInputDialog("Masukkan jumlah pengarang: "));
             Pengarang[] daftarPengarang = new Pengarang[jumlahPengarang];
 
-            //    - Enter author data according to the number of authors.
             for (int j = 0; j < jumlahPengarang; j++) {
                 Pengarang pengarang = new Pengarang();
                 pengarang.setNik(JOptionPane.showInputDialog("Masukkan NIK pengarang: "));
@@ -28,7 +24,6 @@ public class KelolaBuku {
                 daftarPengarang[j] = pengarang;
             }
 
-            //    - Set the list of authors in the Buku class.
             buku.setDaftarPengarang(daftarPengarang);
             daftarBuku[i] = buku;
         }

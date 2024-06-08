@@ -1,6 +1,6 @@
 package Modul_9;
 
-public class SegiEmpat extends BangunDatar{
+public class SegiEmpat extends BangunDatar{ // Class SegiEmpat mewarisi class BangunDatar
     private double panjang;
     private double lebar;
 
@@ -9,13 +9,13 @@ public class SegiEmpat extends BangunDatar{
         this.lebar = lebar;
     }
 
-    @Override
-    protected double hitungLuas() {
+    @Override// Annotation yang menandakan bahwa metode ini di-override dari kelas BangunDatar
+    protected double hitungLuas() { // Metode yang di-override dari kelas abstrak BangunDatar
         return panjang * lebar;
     }
 
     @Override
-    protected double hitungKeliling() {
+    protected double hitungKeliling() {// Metode yang di-override dari kelas abstrak BangunDatar
         return 2 * (panjang + lebar);
     }
 }
