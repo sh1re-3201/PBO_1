@@ -14,7 +14,7 @@ public class ModKelolaPerusahaan {
 
         for (int i = 0; i < jumlahPegawai; i++) {
             pegawai[i] = new newPegawai();
-            System.out.println("Masukkan data pegawai ke-" + i);
+            System.out.println("Masukkan data pegawai ke-" + (i+1));
             System.out.print("Nama: ");
             pegawai[i].setNama(aria.nextLine());
             System.out.print("NPP: ");

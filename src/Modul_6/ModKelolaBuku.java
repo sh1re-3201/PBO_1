@@ -27,10 +27,10 @@ public class ModKelolaBuku {
             daftarBuku[i] = buku;
         }
         for (ModBuku buku : daftarBuku) {
-            System.out.println("Kode ModBuku: " + buku.getKodeBuku());
+            System.out.println("Kode Buku: " + buku.getKodeBuku());
             System.out.println("Judul: " + buku.getJudul());
             System.out.println("Tahun Terbit: " + buku.getTahunTerbit());
-            System.out.println("ModPengarang:");
+            System.out.println("Pengarang:");
             for (ModPengarang pengarang : buku.getDaftarPengarang()) {
                 System.out.println("  NIK: " + pengarang.getNik());
                 System.out.println("  Nama: " + pengarang.getNama());
